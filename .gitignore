@@ -1,0 +1,6 @@
+# Apptainer
+**/*/*.sif
+**/*/*.simg
+
+# Builds
+/build
