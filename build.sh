@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 wdir=$(pwd)
 
 src_dir="src"
