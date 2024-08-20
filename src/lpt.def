@@ -12,7 +12,8 @@ From: ubuntu:22.04
     apt update -y && apt upgrade -y
 
     # Essentials
-    apt install -y build-essential wget bzip2 locales
+    apt install -y build-essential wget bzip2 locales \
+      git curl
 
     # Update locale
     yes | locale-gen en_US.utf8
@@ -22,7 +23,7 @@ From: ubuntu:22.04
     apt install -y python3 python3-pip
     pip3 install \
       matplotlib scipy numpy pandas scienceplots ipython \
-      sympy natsort plotly seaborn urllib3
+      sympy natsort plotly seaborn urllib3 gitpython
     # There's room for improvement here... more python packages should be installed
 
     # LaTeX
